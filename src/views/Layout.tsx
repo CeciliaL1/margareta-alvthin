@@ -1,9 +1,10 @@
 import { NavLink, Outlet } from "react-router";
+import { Header } from "../components/Header";
 
 export const Layout = () => {
   return (
     <>
-      <h1>This is the Layout</h1>
+      <Header></Header>
       <NavLink to="/Start">Start</NavLink>
       <NavLink to="/aboutme">About Me</NavLink>
       <NavLink to="/portfolio">Portfolio</NavLink>
