@@ -1,11 +1,12 @@
 import { NavLink, Outlet } from "react-router";
-import { Header } from "../components/Header";
+
 import "../style/layout.css";
+import { HeaderSlideShow } from "../components/HeaderSlideShow";
 
 export const Layout = () => {
   return (
     <>
-      <Header></Header>
+      <HeaderSlideShow></HeaderSlideShow>
       <NavLink to="/Start">Start</NavLink>
       <NavLink to="/aboutme">About Me</NavLink>
       <NavLink to="/portfolio">Portfolio</NavLink>
