@@ -13,18 +13,16 @@ export const HeaderSlideShow = () => {
   useEffect(() => {
     const slideShowTimeout = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % sliderImages.length);
-    }, 6000);
+    }, 8000);
     return () => clearTimeout(slideShowTimeout);
   }, [current]);
 
-  console.log(current);
   return (
     <>
       <header className="slider-header">
         <AnimatePresence>
-          <motion.img
+          <motion.div
             key={sliderImages[current]}
-            src={sliderImages[current]}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -35,9 +33,22 @@ export const HeaderSlideShow = () => {
               left: 0,
               width: "100%",
               height: "100%",
-              objectFit: "cover",
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0, 0.8))`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
-          ></motion.img>
+          >
+            <img
+              src={sliderImages[current]}
+              alt=""
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                mixBlendMode: "multiply",
+              }}
+            />
+          </motion.div>
         </AnimatePresence>
       </header>
     </>

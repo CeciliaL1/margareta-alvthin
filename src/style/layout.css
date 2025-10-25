@@ -1,5 +1,16 @@
-header .slider-header {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
+.slider-header {
+  height: 100vh;
+}
+
+.slider-header-image {
+  position: "absolute";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: "cover";
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7) rgba(0, 0, 0, 0.7)
+  );
 }
