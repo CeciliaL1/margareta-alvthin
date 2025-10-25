@@ -51,6 +51,7 @@ export const HeaderSlideShow = () => {
           </motion.div>
         </AnimatePresence>
       </header>
+      <h1 className="header-heading">Margareta Alvthin</h1>
     </>
   );
 };
