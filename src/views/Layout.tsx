@@ -14,6 +14,7 @@ export const Layout = () => {
       <NavLink to="/artgallery">Amina art gallery</NavLink>
       <main>
         <Outlet></Outlet>
+        <div style={{ height: "500px" }}></div>
       </main>
     </>
   );
