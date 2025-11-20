@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../style/layout.css";
+import "../style/layout.scss";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const HeaderSlideShow = () => {
