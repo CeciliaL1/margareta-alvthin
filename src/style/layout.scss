@@ -65,3 +65,26 @@
 
   }
 }
+
+@media screen and (max-width: 750px) {
+  .header-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    li {
+      font-size: 0.9rem;
+
+      &:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+      }
+    }
+
+  }
+
+}
